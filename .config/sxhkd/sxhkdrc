@@ -13,9 +13,9 @@ super + {_, shift +} {r,t,n,s}
 super + {o, i}
 	bspc window -f {next, prev}
 super + {1-9,0}
-	bspc desktop -f ^{1-9,0}
-super + shift + {1-9,0}
-	bspc window -d ^{1-9,0}
+	bspc desktop -f ^{1-9,10}
+super + shift + {1-9,10}
+	bspc window -d ^{1-9,10}
 super + u 	
 	bspc window -t fullscreen
 super + ntilde

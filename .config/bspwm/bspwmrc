@@ -1,15 +1,17 @@
-#!/bin/dash
+#!/bin/zsh
 
 bspc monitor -d  I II III IV V VI VII VIII IX X
+#bspc monitor -d $(echo '\uf109') $(echo '\uf121') $(echo '\uf0c3')  $(echo '\uf03d') $(echo '\uf1c5') $(echo '\uf141') $(echo '\uf001') $(echo '\uf120')
 bspc config top_padding $PANEL_HEIGHT
-bspc config window_gap 12
+bspc config window_gap 20
 bspc config border_width 2
 bspc config split_ratio 0.52
 bspc config borderless_monocle false
 bspc config gapless_monocle true
-#bspc config apply_floating_atom true
 
 # Rules
 
 bspc rule -a URxvtQuake sticky=on floating=on
 bspc rule -a scratchpad sticky=on floating=on
+
+panel &
