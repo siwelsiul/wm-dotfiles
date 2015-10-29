@@ -20,6 +20,14 @@ super + u
 	bspc window -t fullscreen
 super + ntilde
 	bspc desktop --layout next
+super + space 
+    bspc window -t floating
+super + b 
+    bspc desktop -B
+super + {h,j,k,l}
+    bspc window -p {left,down,up,right}
+super + {_,shift} + g
+    bspc desktop -R {90,270}
 
 # mouse hotkeys
 ~button1
